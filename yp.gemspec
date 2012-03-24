@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["auswalk@gmail.com"]
   gem.description   = %q{Simple ruby wrapper for YP.com API}
   gem.summary       = %q{Simple ruby wrapper for YP.com API}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/auswalk/yp"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
