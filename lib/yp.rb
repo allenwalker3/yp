@@ -24,7 +24,7 @@ module Yp
         req.url SEARCH_PATH, options
       end
 
-      JSON.parse(response.body)['searchResult']['searchListings']
+      JSON.parse(response.body)['searchResult']['searchListings']['searchListing']
     end
 
     # e.g. client.details("30624356")
@@ -34,7 +34,7 @@ module Yp
         req.url DETAILS_PATH, {listingid: listingid}
       end
 
-      JSON.parse(response.body)['listingsDetailsResult']['listingsDetails']
+      JSON.parse(response.body)['listingsDetailsResult']['listingsDetails']['listingDetail'][0]
     end
 
     private
